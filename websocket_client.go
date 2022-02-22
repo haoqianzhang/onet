@@ -49,7 +49,7 @@ func NewClient(suite network.Suite, s string) *Client {
 		connections:      make(map[destination]*websocket.Conn),
 		connectionsLock:  make(map[destination]*sync.Mutex),
 		suite:            suite,
-		ReadTimeout:      time.Second * 60,
+		ReadTimeout:      time.Second * 60 * 2,
 		HandshakeTimeout: time.Second * 5,
 	}
 }
