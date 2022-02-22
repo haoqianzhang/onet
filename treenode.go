@@ -83,7 +83,7 @@ const (
 
 	// DefaultChannelLength is the default number of messages that can wait
 	// in a channel.
-	DefaultChannelLength = 100
+	DefaultChannelLength = 10000
 )
 
 // MsgHandler is called upon reception of a certain message-type
